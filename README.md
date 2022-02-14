@@ -13,6 +13,9 @@ Kcptun is a GUI program for kcptun on macOS.
 [![License](https://img.shields.io/:license-GPL--3.0--only-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 ## Version:
+v1.5
+1. fix setting bug
+2. add m1 support
 
 v1.4
 

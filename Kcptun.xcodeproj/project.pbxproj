@@ -14,7 +14,6 @@
 		BE7F9DC92434CBBA00EFA114 /* LogWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */; };
 		BE7F9DCA2434CBBA00EFA114 /* LogWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */; };
 		BEBF3CC12433239000358D88 /* ProfileWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */; };
-		BEBF3CC52433270000358D88 /* client_darwin_amd64 in Resources */ = {isa = PBXBuildFile; fileRef = BEBF3CC42433270000358D88 /* client_darwin_amd64 */; };
 		BEBF3CC72433271A00358D88 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CC62433271A00358D88 /* Profile.swift */; };
 		BEBF3CEC24336B4100358D88 /* Kcptun.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF3CEB24336B4100358D88 /* Kcptun.swift */; };
 		BEBF3CF024336BCC00358D88 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBF3CEE24336BB500358D88 /* SystemConfiguration.framework */; };
@@ -28,6 +27,7 @@
 		BEFB227824330FC800660C12 /* KcptunTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB227724330FC800660C12 /* KcptunTests.swift */; };
 		BEFB228424331BAE00660C12 /* StatusMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFB228324331BAE00660C12 /* StatusMenuManager.swift */; };
 		E8792C022440291A003C2145 /* EditableNSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8792C012440291A003C2145 /* EditableNSTextField.swift */; };
+		F5671A3127BA6CE4007F38C6 /* client_darwin_arm64 in Resources */ = {isa = PBXBuildFile; fileRef = F5671A3027BA6CE4007F38C6 /* client_darwin_arm64 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,6 @@
 		BE7F9DC72434CBBA00EFA114 /* LogWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogWindowController.xib; sourceTree = "<group>"; };
 		BE7F9DC82434CBBA00EFA114 /* LogWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogWindowController.swift; sourceTree = "<group>"; };
 		BEBF3CBF2433239000358D88 /* ProfileWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWindowController.swift; sourceTree = "<group>"; };
-		BEBF3CC42433270000358D88 /* client_darwin_amd64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = client_darwin_amd64; sourceTree = "<group>"; };
 		BEBF3CC62433271A00358D88 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		BEBF3CEB24336B4100358D88 /* Kcptun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kcptun.swift; sourceTree = "<group>"; };
 		BEBF3CEE24336BB500358D88 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -82,6 +81,7 @@
 		BEFB227924330FC800660C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEFB228324331BAE00660C12 /* StatusMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusMenuManager.swift; sourceTree = "<group>"; };
 		E8792C012440291A003C2145 /* EditableNSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditableNSTextField.swift; sourceTree = "<group>"; };
+		F5671A3027BA6CE4007F38C6 /* client_darwin_arm64 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = client_darwin_arm64; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,7 @@
 		BEFB226524330FC600660C12 /* Kcptun */ = {
 			isa = PBXGroup;
 			children = (
-				BEBF3CC42433270000358D88 /* client_darwin_amd64 */,
+				F5671A3027BA6CE4007F38C6 /* client_darwin_arm64 */,
 				BEFB226624330FC600660C12 /* AppDelegate.swift */,
 				BEFB228324331BAE00660C12 /* StatusMenuManager.swift */,
 				BEBF3CC62433271A00358D88 /* Profile.swift */,
@@ -267,9 +267,9 @@
 				BE33FF782435AFD80053914C /* ToastWindowController.xib in Resources */,
 				BEDC653F2534027900374734 /* ProfileWindowController.xib in Resources */,
 				BEDC6537253401BD00374734 /* Localizable.strings in Resources */,
-				BEBF3CC52433270000358D88 /* client_darwin_amd64 in Resources */,
 				BE7F9DC92434CBBA00EFA114 /* LogWindowController.xib in Resources */,
 				BEFB226C24330FC800660C12 /* MainMenu.xib in Resources */,
+				F5671A3127BA6CE4007F38C6 /* client_darwin_arm64 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -457,7 +457,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

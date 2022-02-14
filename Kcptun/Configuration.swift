@@ -25,7 +25,7 @@ let _VERSION_XML_URL = "https://raw.githubusercontent.com/paradiseduo/Kcptun/mas
 let _VERSION_XML_LOCAL:String = Bundle.main.bundlePath + "/Contents/Info.plist"
 
 // Log Helper
-let LOG_PATH = "/usr/local/var/log/kcptun"
+let LOG_PATH = "/var/log/kcptun.log"
 let LOG_CLEAN_FINISH = Notification.Name("LOG_CLEAN_FINISH")
 
 // Launcher Helper

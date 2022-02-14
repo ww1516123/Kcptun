@@ -9,7 +9,7 @@
 import Foundation
 
 class Kcptun {
-    let kcptun = Bundle.main.path(forResource: "client_darwin_amd64", ofType: nil)
+    let kcptun = Bundle.main.path(forResource: "client_darwin_arm64", ofType: nil)
     static let shared = Kcptun()
     
     private var task: Process?
