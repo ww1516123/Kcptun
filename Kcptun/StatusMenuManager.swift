@@ -24,14 +24,14 @@ class StatusMenuManager: NSObject {
         updateMainMenu()
         NotificationCenter.default.addObserver(forName: KCPTUN_START, object: nil, queue: OperationQueue.main) { (noti) in
             if !UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON) {
-                UserDefaults.standard.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
+//                UserDefaults.standard.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
                 UserDefaults.standard.synchronize()
                 self.updateMainMenu()
             }
         }
         NotificationCenter.default.addObserver(forName: KCPTUN_STOP, object: nil, queue: OperationQueue.main) { (noti) in
             if UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON) {
-                UserDefaults.standard.set(false, forKey: USERDEFAULTS_KCPTUN_ON)
+//                UserDefaults.standard.set(false, forKey: USERDEFAULTS_KCPTUN_ON)
                 UserDefaults.standard.synchronize()
                 self.updateMainMenu()
             }
@@ -68,11 +68,11 @@ class StatusMenuManager: NSObject {
         let defaults = UserDefaults.standard
         let isOn = defaults.bool(forKey: USERDEFAULTS_KCPTUN_ON)
         if isOn {
-            defaults.set(false, forKey: USERDEFAULTS_KCPTUN_ON)
+            UserDefaults.standard.set(false, forKey: USERDEFAULTS_KCPTUN_ON)
             Kcptun.shared.stop()
             self.makeToast("Kcptun OFF")
         } else {
-            defaults.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
+             UserDefaults.standard.set(true, forKey: USERDEFAULTS_KCPTUN_ON)
             Kcptun.shared.start()
             self.makeToast("Kcptun ON")
         }
@@ -134,10 +134,13 @@ class StatusMenuManager: NSObject {
     }
     
     @IBAction func launchAtLogin(_ sender: NSMenuItem) {
+        print(UserDefaults.standard.bool(forKey: USERDEFAULTS_LAUNCH_AT_LOGIN))
         if UserDefaults.standard.bool(forKey: USERDEFAULTS_LAUNCH_AT_LOGIN) {
             AppDelegate.setLauncherStatus(open: false)
+            UserDefaults.standard.set(false,forKey: USERDEFAULTS_LAUNCH_AT_LOGIN)
         } else {
             AppDelegate.setLauncherStatus(open: true)
+            UserDefaults.standard.set(true,forKey: USERDEFAULTS_LAUNCH_AT_LOGIN)
         }
         self.updateMainMenu()
     }

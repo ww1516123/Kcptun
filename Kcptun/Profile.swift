@@ -75,6 +75,7 @@ class Profile {
     }
     
     func arguments() -> [String] {
+        loadProfile()
         if self.nocomp {
             return ["-r","\(self.host):\(self.remotePort)",
                 "-l",":\(self.localPort)",

@@ -13,6 +13,7 @@ import ServiceManagement
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let bootOn = UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON)
         if UserDefaults.standard.bool(forKey: USERDEFAULTS_KCPTUN_ON) {
             Kcptun.shared.start()
         }
